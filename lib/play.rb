@@ -37,4 +37,13 @@ end
 
 # Define your play method below
 def play(board)
+  
+  while turn(board) = 0  
+  turn(board) += 1
+  if turn(board) < 10 
+    return "Good! Next move. "
+  else
+    return "Please try again"
+  end
+end
 end
